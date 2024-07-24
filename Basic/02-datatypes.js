@@ -34,6 +34,7 @@ let mySymbol = Symbol("mysymbol")
 
 let myBigInt = BigInt(817239871289371986589716389471628379612983761289376129)
 let myBigInt2 = 817239871289371986589716389471628379612983761289376129n
+//cambio para ver que pasa
 
 // Mostramos los tipos de datos
 console.log(typeof myName)
