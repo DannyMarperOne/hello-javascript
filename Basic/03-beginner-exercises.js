@@ -6,7 +6,15 @@ https://www.twitch.tv/videos/2200149072?t=00h08m02s
 
 // 1. Escribe un comentario en una línea
 
+// Ejemplo de comentario en una linea
+
 // 2. Escribe un comentario en varias líneas
+
+/*
+Ejemplo de comentario
+en varias
+lineas de código.
+*/
 
 // 3. Declara variables con valores asociados a todos los datos de tipo primitivos
 
