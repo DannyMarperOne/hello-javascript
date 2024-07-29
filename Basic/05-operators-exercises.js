@@ -5,6 +5,20 @@ https://www.twitch.tv/videos/2200149072?t=00h08m02s
 */
 
 // 1. Crea una variable para cada operación aritmética
+let suma = 5 + 5;
+let resta = 5 - 3;
+let multiplicacion = 2 * 5;
+let division = 8 / 2;
+let modulo = 5 % 3;
+let exponente = 4 ** 2;
+
+console.log(suma);
+console.log(resta);
+console.log(multiplicacion);
+console.log(division);
+console.log(modulo);
+console.log(exponente);
+
 
 // 2. Crea una variable para cada tipo de operación de asignación,
 //    que haga uso de las variables utilizadas para las operaciones aritméticas
