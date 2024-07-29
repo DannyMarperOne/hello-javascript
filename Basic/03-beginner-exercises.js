@@ -66,6 +66,21 @@ unico;
 
 // 8. Declara constantes con valores asociados a todos los tipos de datos primitivos
 
+const numberType = 90;
+const textType = "Targaryan";
+const numberBig = BigInt(5748203294545);
+const value = true;
+const simbolo = Symbol("Dragon");
+const sinValor = null;
+
 // 9. A continuación, modifica los valores de las constantes
 
+// numberType = 1000;
+/*
+textType = "Drakarys";
+numberBig = BigInt(20202020202);
+value = false;
+simbolo = Symbol("Caraxes");
+sinValor = null;
+*/
 // 10. Comenta las líneas que produzcan algún tipo de error al ejecutarser
