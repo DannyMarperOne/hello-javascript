@@ -100,6 +100,20 @@ console.log(4 == 4 || (false !== true && 20 <= 200));
 // 8. Añade alguna negación
 console.log("Punto 8");
 
+console.log(numberDos != numberUno);
+console.log(5 + 5 !== 5 + "5");
+console.log(!false);
+console.log(!0);
+console.log(!1);
+
 // 9. Utiliza el operador ternario
+console.log("Punto 9");
+
+console.log(5 + 5 == 10 ? true : false);
+let vari = "Aguacate";
+console.log(vari.length == 10 ? "Comparación correcta" : "Comparación incorrecta");
 
 // 10. Combina operadores aritméticos, de comparáción y lógicas
+console.log("Punto 10");
+
+console.log(12 + 8 === 20 && 30 < 100 && 5 * '2' >= 10);
