@@ -51,6 +51,8 @@ asignarExponente **= exponente;
 console.log(asignarExponente);
 
 // 3. Imprime 5 comparaciones verdades con diferentes operadores de comparación
+console.log("Punto 3");
+
 console.log(4 > 2);
 console.log(10 <= 100);
 console.log(20 >= 20);
@@ -58,18 +60,45 @@ console.log(2 === 2);
 console.log(6 != 2);
 
 // 4. Imprime 5 comparaciones falsas con diferentes operadores de comparación
+console.log("Punto 4");
+
 console.log(5 < 0);
 console.log(10 === "10");
 console.log(144 >= 2000);
 console.log("hola" !== "hola");
 console.log("daniel" === 3);
+
 // 5. Utiliza el operador lógico and
+console.log("Punto 5");
+
+console.log(510 > 1 && 59 < 60);
+console.log(10 >= 1 && 40 < 60);
+console.log(5 === "5" && 5 != 4);
+console.log(80 < 100 && 40 >= 40);
+console.log(20 == '20' && 40 === 40);
 
 // 6. Utiliza el operador lógico or
+console.log("Punto 6");
+
+console.log(false || 10 + 10 == 20);
+console.log(false || true);
+console.log(50 > 40 || 40 > 50);
+console.log(20 <= 5 || 40 >= 65);
+console.log(true == false || false == false);
 
 // 7. Combina ambos operadores lógicos
+console.log("Punto 7");
+
+console.log(5 > 4 && 6 > 1 && 8 < 9);
+console.log(5 >= 4 && 6 < 1 && 20 == 20);
+console.log(5 + 5 == 10 && true && 2 === 2);
+let numberUno = 5;
+let numberDos = 10;
+console.log(numberDos >= numberUno || true || numberOne === 5);
+console.log(4 == 4 || (false !== true && 20 <= 200));
 
 // 8. Añade alguna negación
+console.log("Punto 8");
 
 // 9. Utiliza el operador ternario
 
