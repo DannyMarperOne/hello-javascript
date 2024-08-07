@@ -33,8 +33,13 @@ console.log(pais);
 console.log(`Habla sobre tí: ${pais} y mi hija se llama ${fullname}`);
 
 // 7. Reemplaza todos los espacios en blanco de un string por guiones
-let remplaceRegex = / /g;
-console.log(pais.replace(remplaceRegex, "_"));
+
+//Con expresiones regulares
+// let remplaceRegex = / /g;
+// console.log(pais.replace(remplaceRegex, "_"));
+
+//Con replaceAll
+console.log(pais.replaceAll(" ", "_"));
 
 // 8. Comprueba si una cadena de texto contiene una palabra concreta
 console.log(pais.includes("Daniel"));
