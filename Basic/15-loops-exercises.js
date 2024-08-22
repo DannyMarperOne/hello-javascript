@@ -76,18 +76,30 @@ for (let i = 0; i < txt.length; i++) {
 console.log(`La palabra ${txt} contiene ${result} vocales`);
 
 // 6. Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto
-
-const arrNum = [5, 3, 6, 2, 6, 9, 23];
-let position = 0;
-
-while (position <= arrNum.length - 1) {
-    console.log("hOLA")
-    position++
+const arrayNum = [2, 5, 6, 3];
+let multiplicar = 1;
+for (let i = 0; i < arrayNum.length; i++) {
+    multiplicar = multiplicar * arrayNum[i];
 }
+console.log(multiplicar);
 
 // 7. Escribe un bucle que imprima la tabla de multiplicar del 5
+const tabla = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let cinco = 5;
+for (let multi of tabla) {
+    let result;
+    result = multi * cinco;
+    console.log(`${cinco} * ${multi} = ${result}`);
+}
 
 // 8. Usa un bucle para invertir una cadena de texto
+
+let text = "Daniel";
+let newWord = "";
+for (let i = text.length - 1; i >= 0; i--) {
+    newWord += text[i];
+}
+console.log(newWord);
 
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
 
