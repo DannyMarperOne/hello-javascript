@@ -66,15 +66,24 @@ for (let value of arreglo) {
 
 // 5. Escribe un bucle que cuente el número de vocales en una cadena de texto
 let txt = "JavierRojoGomez";
+let result = 0;
 for (let i = 0; i < txt.length; i++) {
+    // console.log(txt[i]);
     if (txt[i] == "a" || txt[i] == "e" || txt[i] == "i" || txt[i] == "o" || txt[i] == "u") {
-        let result = 0;
-        result = result++
-        console.log(result)
+        result = result + 1;
     }
 }
+console.log(`La palabra ${txt} contiene ${result} vocales`);
 
 // 6. Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto
+
+const arrNum = [5, 3, 6, 2, 6, 9, 23];
+let position = 0;
+
+while (position <= arrNum.length - 1) {
+    console.log("hOLA")
+    position++
+}
 
 // 7. Escribe un bucle que imprima la tabla de multiplicar del 5
 
