@@ -105,7 +105,8 @@ console.log(newWord);
 let v1 = 0;
 let v2 = 1;
 let v3 = 0;
-console.log(v1, v2);
+console.log(v1);
+console.log(v2);
 for (let i = 0; i <= 10; i++) {
     v3 = v1 + v2;
     v1 = v2
@@ -114,18 +115,26 @@ for (let i = 0; i <= 10; i++) {
 }
 
 
+
 let r = 8;
 let fibSequence = [0, 1];
 
 for (let i = 2; i <= r; i++) {
     fibSequence[i] = fibSequence[i - 1] + fibSequence[i - 2];
-    console.log(fibSequence)
+    // console.log(fibSequence)
 
 }
 console.log(fibSequence)
-
 // Output: [0, 1, 1, 2, 3, 5, 8, 13]
 
-
-
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
+const arr = [439, 23, 1, 5, 32, 7, 33, 18, 9, 12];
+let iter = 0;
+let arrNumMay;
+
+while (arr.length > iter) {
+    if (arr[iter] > 10) {
+        console.log(arr[iter]);
+    }
+    iter++
+}
