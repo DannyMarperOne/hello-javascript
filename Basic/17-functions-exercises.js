@@ -8,7 +8,20 @@ https://www.youtube.com/live/xg1GeHKiNzU?si=oiWHK8bDTZ1c98hF&t=885
 
 // 1. Crea una función que reciba dos números y devuelva su suma
 
+function myFunction(num1, num2) {
+    return num1 + num2
+}
+
+console.log(myFunction(3, 5))
+
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
+
+let array = [3, 4, 6, 23, 53, 1];
+function myArray(valor) {
+    console.log(valor.sort());
+}
+
+myArray(array)
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 
