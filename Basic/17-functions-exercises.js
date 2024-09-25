@@ -25,18 +25,20 @@ function myArray(valor) {
 myArray(array)
 
 //con algoritmo de ordenamiento
+//Insertion Sort
 
 function insertionSort(arr) {
-    for (let j = 1; j < arr.length; j++) {
-        let actual = arr[j];
+    for (let l = 1; l < arr.length; l++) {
+        let currentValue = arr[l];
 
-        let i = j - 1;
-        while (i >= 0 && arr[i] > actual) {
-            arr[i + j] = arr[i];
+        let i = l - 1;
+        while (i >= 0 && arr[i] > currentValue) {
+            arr[i + 1] = arr[i];
             i = i - 1;
         }
-        arr[i + 1] = actual;
+        arr[i + 1] = currentValue;
     }
+    return arr
 }
 const arr = [4, 20, 5, 61, 3, 6, 2, 5];
 console.log(insertionSort(arr));
