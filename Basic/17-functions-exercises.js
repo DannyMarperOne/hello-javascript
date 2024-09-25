@@ -16,12 +16,31 @@ console.log(myFunction(3, 5))
 
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
 
-let array = [3, 4, 6, 23, 53, 1];
+//con el método sort
+let array = [3, 4, 6, 2, 3, 1];
 function myArray(valor) {
     console.log(valor.sort());
 }
 
 myArray(array)
+
+//con algoritmo de ordenamiento
+
+function insertionSort(arr) {
+    for (let j = 1; j < arr.length; j++) {
+        let actual = arr[j];
+
+        let i = j - 1;
+        while (i >= 0 && arr[i] > actual) {
+            arr[i + j] = arr[i];
+            i = i - 1;
+        }
+        arr[i + 1] = actual;
+    }
+}
+const arr = [4, 20, 5, 61, 3, 6, 2, 5];
+console.log(insertionSort(arr));
+
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 
