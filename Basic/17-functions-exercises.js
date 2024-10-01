@@ -45,6 +45,11 @@ console.log(insertionSort(arr));
 
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
+let nombre = "Pentagon Junior"
+let cont = 0;
+function insertText() {
+
+}
 
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 
