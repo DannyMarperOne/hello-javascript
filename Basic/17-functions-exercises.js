@@ -7,9 +7,48 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=14146
 
 // 1. Crea una función que reciba dos números y devuelva su suma
 
+function myFunction(num1, num2) {
+    return num1 + num2
+}
+
+console.log(myFunction(3, 5))
+
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
 
+//con el método sort
+let array = [3, 4, 6, 2, 3, 1];
+function myArray(valor) {
+    console.log(valor.sort());
+}
+
+myArray(array)
+
+//con algoritmo de ordenamiento
+//Insertion Sort
+
+function insertionSort(arr) {
+    for (let l = 1; l < arr.length; l++) {
+        let currentValue = arr[l];
+
+        let i = l - 1;
+        while (i >= 0 && arr[i] > currentValue) {
+            arr[i + 1] = arr[i];
+            i = i - 1;
+        }
+        arr[i + 1] = currentValue;
+    }
+    return arr
+}
+const arr = [4, 20, 5, 61, 3, 6, 2, 5];
+console.log(insertionSort(arr));
+
+
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
+let nombre = "Pentagon Junior"
+let cont = 0;
+function insertText() {
+
+}
 
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 
