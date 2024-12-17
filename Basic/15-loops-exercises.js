@@ -11,7 +11,7 @@ let toOne = 1;
 do {
     console.log(`El numero es ${toOne}`);
     toOne++
-} while (toOne <= 10)
+} while (toOne <= 20)
 
 // 2. Crea un bucle que sume todos los números del 1 al 100 y muestre el resultado
 
@@ -29,7 +29,7 @@ while (iterator <= 100) {
     resultado2 += iterator;
     iterator++
 }
-console.log(`El resultado de la suma de los numeros del 1 al 100 es ${resultado2} con For`);
+console.log(`El resultado de la suma de los numeros del 1 al 100 es ${resultado2} con While`);
 
 // 3. Crea un bucle que imprima todos los números pares entre 1 y 50
 

@@ -14,33 +14,13 @@ function myFunction(num1, num2) {
 console.log(myFunction(3, 5))
 
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
+const array = [3, 4, 6, 2, 3, 1];
 
-//con el método sort
-let array = [3, 4, 6, 2, 3, 1];
-function myArray(valor) {
-    console.log(valor.sort());
+function numMayor(arr) {
+    return Math.max(...arr);
 }
 
-myArray(array)
-
-//con algoritmo de ordenamiento
-//Insertion Sort
-
-function insertionSort(arr) {
-    for (let l = 1; l < arr.length; l++) {
-        let currentValue = arr[l];
-
-        let i = l - 1;
-        while (i >= 0 && arr[i] > currentValue) {
-            arr[i + 1] = arr[i];
-            i = i - 1;
-        }
-        arr[i + 1] = currentValue;
-    }
-    return arr
-}
-const arr = [4, 20, 5, 61, 3, 6, 2, 5];
-console.log(insertionSort(arr));
+console.log('El número más grande es: ', numMayor(array));
 
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
