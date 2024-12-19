@@ -24,7 +24,7 @@ console.log(`El número mayor de la lista es ${mayorList(listArr)}`);
 
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
-let nombre1 = "PentagonJunior"
+let nombre1 = "PentagonJuniora"
 let cont1 = 0;
 function insertText1(texto1) {
     for (let i = 0; i < texto1.length; i++) {
@@ -52,8 +52,49 @@ insertText(nombre);
 
 
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
+const arrText = ['Hola', 'mexico', 'Checo Perez', 'monterrey'];
+function stringFunc(cadena) {
+    let resultado = [];
+    for (let value of cadena) {
+        resultado.push(value.toLowerCase());
+    }
+    return resultado;
+}
+console.log(stringFunc(arrText));
+
+//Programa 2
+/* const arrText = ['Hola', 'mexico', 'Checo Perez', 'monterrey'];
+function stringFunc(cadena) {
+    for (let value of cadena) {
+        let txt = value.toLowerCase();
+        return txt;
+    }
+}
+console.log(stringFunc(arrText)); */
+
+//Programa 1
+/* const arrText = ['Hola', 'mexico', 'Checo Perez', 'monterrey'];
+function stringFunc(cadena) {
+    for (let value of cadena) {
+        console.log(value.toLowerCase())
+    }
+}
+stringFunc(arrText); */
 
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
+
+/* 
+Numeros primos
+    - Mayor a 1
+    - Solo pueden divirse entre 1 y entre si mismos y no dejar reciduo
+*/
+let numP = 0;
+const primosMX = function (valor) {
+    if (valor < 1) {
+        return false
+    }
+}
+console.log(primosMX(numP));
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
