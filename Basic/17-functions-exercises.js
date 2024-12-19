@@ -14,21 +14,42 @@ function myFunction(num1, num2) {
 console.log(myFunction(3, 5))
 
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
-const array = [3, 4, 6, 2, 3, 1];
+const listArr = [6, 46, 7, 34, 46, 7, 5];
 
-function numMayor(arr) {
-    return Math.max(...arr);
+const mayorList = function (list) {
+    return Math.max(...list);
 }
+console.log(`El número mayor de la lista es ${mayorList(listArr)}`);
 
-console.log('El número más grande es: ', numMayor(array));
 
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
-let nombre = "Pentagon Junior"
-let cont = 0;
-function insertText() {
-
+let nombre1 = "PentagonJunior"
+let cont1 = 0;
+function insertText1(texto1) {
+    for (let i = 0; i < texto1.length; i++) {
+        if (texto1[i] == 'a' || texto1[i] == 'i' || texto1[i] == 'e' || texto1[i] == 'o' || texto1[i] == 'u') {
+            cont1 = cont1 + 1;
+        }
+    }
+    console.log('El texto ' + nombre1 + ' tiene ' + cont1 + ' vocales');
 }
+insertText1(nombre1);
+
+//Forma mejorada
+let nombre = "PentagonJunior"
+let cont = 0;
+function insertText(texto) {
+    const vocales = "aeiou";
+    for (let i = 0; i < texto.length; i++) {
+        if (vocales.includes(texto[i].toLowerCase())) {
+            cont++;
+        }
+    }
+    console.log(`El texto ${nombre} contine ${cont} vocales`);
+}
+insertText(nombre);
+
 
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 
