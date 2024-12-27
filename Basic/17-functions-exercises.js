@@ -88,10 +88,18 @@ Numeros primos
     - Mayor a 1
     - Solo pueden divirse entre 1 y entre si mismos y no dejar reciduo
 */
-let numP = 0;
+let numP = 11;
 const primosMX = function (valor) {
-    if (valor < 1) {
-        return false
+    if (valor <= 1) {
+        return 'No es primo';
+    } else if (valor === 2) {
+        return 'Es primo';
+    } else {
+        for (let n = 2; n <= Math.sqrt(valor); n++) {
+            if (valor % n === 0) {
+                return 'No es numero primo';
+            }
+        } return 'Es numero primo';
     }
 }
 console.log(primosMX(numP));
