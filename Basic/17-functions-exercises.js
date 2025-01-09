@@ -8,10 +8,10 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=14146
 // 1. Crea una función que reciba dos números y devuelva su suma
 
 function myFunction(num1, num2) {
-    return num1 + num2
+    return num1 + num2;
 }
 
-console.log(myFunction(3, 5))
+console.log(`El resultado de la suma es ${myFunction(3, 5)}`);
 
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
 const listArr = [6, 46, 7, 34, 46, 7, 5];
@@ -29,7 +29,7 @@ let cont1 = 0;
 function insertText1(texto1) {
     for (let i = 0; i < texto1.length; i++) {
         if (texto1[i] == 'a' || texto1[i] == 'i' || texto1[i] == 'e' || texto1[i] == 'o' || texto1[i] == 'u') {
-            cont1 = cont1 + 1;
+            cont1 += 1;
         }
     }
     console.log('El texto ' + nombre1 + ' tiene ' + cont1 + ' vocales');
