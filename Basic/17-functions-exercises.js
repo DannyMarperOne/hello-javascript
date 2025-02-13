@@ -13,6 +13,8 @@ function myFunction(num1, num2) {
 
 console.log(`El resultado de la suma es ${myFunction(3, 5)}`);
 
+
+
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
 const listArr = [6, 46, 7, 34, 46, 7, 5];
 
@@ -51,6 +53,7 @@ function insertText(texto) {
 insertText(nombre);
 
 
+
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 const arrText = ['Hola', 'mexico', 'Checo Perez', 'monterrey'];
 function stringFunc(cadena) {
@@ -72,6 +75,8 @@ function stringFunc(cadena) {
     }
 }
 stringFunc(arrTesxt); */
+
+
 
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
 
@@ -98,6 +103,8 @@ const primosMX = function (valor) {
     }
 }
 console.log(primosMX(numP));
+
+
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
@@ -137,8 +144,7 @@ const array1 = [1, 2, 3, 4];
 // 0 + 1 + 2 + 3 + 4
 const initialValue = 0;
 const sumWithInitial = array1.reduce(
-    (accumulator, currentValue) => accumulator + currentValue,
-    initialValue
+    (accumulator, currentValue) => accumulator + currentValue, initialValue
 );
 
 console.log(sumWithInitial);
@@ -150,11 +156,47 @@ console.log(sumWithInitial);
 const arrN2 = [3, 4, 12, 6];
 
 function numCuadrado(arrN2) {
-    let r = arrN2.map((Element) => Element * 2);
+    let r = arrN2.map(Element => Element * 2);
     return r;
 }
 console.log(numCuadrado(arrN2));
 
+//Código: Arrow function desglosado
+/* const arrN2 = [3, 4, 12, 6];
+
+function numCuadrado(arrN2) {
+    let r = arrN2.map(Element => {
+        let k = Element * 2;
+        return k;
+    });
+    return r;
+}
+console.log(numCuadrado(arrN2)); */
+
+
+
 // 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
+let cadena = "Texto";
+
+const reverse = function (text) {
+    let separador = "";
+    let reversible = text.split(separador).reverse().join("");
+    return reversible;
+}
+
+console.log(reverse(cadena));
+
+
 
 // 10. Crea una función que calcule el factorial de un número dado
+let fac = 1;
+
+function factor(factorial) {
+    if (factorial === 0) {
+        return 1;
+    } else {
+        return factorial * factor(factorial - 1);
+    }
+};
+
+console.log(factor(fac));
